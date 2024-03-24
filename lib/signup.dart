@@ -1,4 +1,4 @@
-// ignore_for_file: unnecessary_new, unnecessary_null_comparison, use_build_context_synchronously, unused_local_variable, duplicate_ignore, avoid_unnecessary_containers
+// ignore_for_file: unnecessary_new, unnecessary_null_comparison, use_build_context_synchronously, unused_local_variable, duplicate_ignore, avoid_unnecessary_containers, sized_box_for_whitespace
 
 import 'package:authenticationapp/home.dart';
 import 'package:authenticationapp/login.dart';

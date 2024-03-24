@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "114629637917",
-    "project_id": "authenticationapp-5ba73",
-    "storage_bucket": "authenticationapp-5ba73.appspot.com"
+    "project_number": "999323436024",
+    "project_id": "loginsignup-809b0",
+    "storage_bucket": "loginsignup-809b0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:114629637917:android:c359be45e9f6721726d3f4",
+        "mobilesdk_app_id": "1:999323436024:android:6fed804134492758730c0d",
         "android_client_info": {
           "package_name": "com.example.authenticationapp"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAJs31g3A-yzCCg0EHfgVwO25FLkVfO8N4"
+          "current_key": "AIzaSyA062lHtbAPAb80eSdPT6R3Fg6_1TcCWCQ"
         }
       ],
       "services": {

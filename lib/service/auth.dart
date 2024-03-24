@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_null_comparison, await_only_futures, non_constant_identifier_names
+
 import 'package:authenticationapp/home.dart';
 import 'package:authenticationapp/service/database.dart';
 import 'package:firebase_auth/firebase_auth.dart';

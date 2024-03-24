@@ -1,4 +1,4 @@
-// ignore_for_file: use_build_context_synchronously
+// ignore_for_file: use_build_context_synchronously, unnecessary_new, avoid_unnecessary_containers, sized_box_for_whitespace
 
 import 'package:authenticationapp/forgot_password.dart';
 import 'package:authenticationapp/home.dart';
@@ -111,17 +111,18 @@ class _LogInState extends State<LogIn> {
                             hintText: "Password",
                             hintStyle: TextStyle(
                                 color: Color(0xFFb2b7bf), fontSize: 18.0)),
-                   obscureText: true,   ),
+                        obscureText: true,
+                      ),
                     ),
                     SizedBox(
                       height: 30.0,
                     ),
                     GestureDetector(
-                      onTap: (){
-                        if(_formkey.currentState!.validate()){
+                      onTap: () {
+                        if (_formkey.currentState!.validate()) {
                           setState(() {
-                            email= mailcontroller.text;
-                            password=passwordcontroller.text;
+                            email = mailcontroller.text;
+                            password = passwordcontroller.text;
                           });
                         }
                         userLogin();
@@ -150,8 +151,9 @@ class _LogInState extends State<LogIn> {
               height: 20.0,
             ),
             GestureDetector(
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> ForgotPassword()));
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ForgotPassword()));
               },
               child: Text("Forgot Password?",
                   style: TextStyle(
@@ -176,7 +178,7 @@ class _LogInState extends State<LogIn> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 GestureDetector(
-                  onTap: (){
+                  onTap: () {
                     AuthMethods().signInWithGoogle(context);
                   },
                   child: Image.asset(
@@ -190,7 +192,7 @@ class _LogInState extends State<LogIn> {
                   width: 30.0,
                 ),
                 GestureDetector(
-                  onTap: (){
+                  onTap: () {
                     AuthMethods().signInWithApple();
                   },
                   child: Image.asset(

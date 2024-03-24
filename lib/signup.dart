@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_new, unnecessary_null_comparison, use_build_context_synchronously, unused_local_variable, duplicate_ignore, avoid_unnecessary_containers
+
 import 'package:authenticationapp/home.dart';
 import 'package:authenticationapp/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -19,7 +21,9 @@ class _SignUpState extends State<SignUp> {
   final _formkey = GlobalKey<FormState>();
 
   registration() async {
-    if (password != null&& namecontroller.text!=""&& mailcontroller.text!="") {
+    if (password != null &&
+        namecontroller.text != "" &&
+        mailcontroller.text != "") {
       try {
         UserCredential userCredential = await FirebaseAuth.instance
             .createUserWithEmailAndPassword(email: email, password: password);
@@ -137,22 +141,22 @@ class _SignUpState extends State<SignUp> {
                         controller: passwordcontroller,
                         decoration: InputDecoration(
                             border: InputBorder.none,
-                            
                             hintText: "Password",
                             hintStyle: TextStyle(
                                 color: Color(0xFFb2b7bf), fontSize: 18.0)),
-             obscureText: true,  ),
+                        obscureText: true,
+                      ),
                     ),
                     SizedBox(
                       height: 30.0,
                     ),
                     GestureDetector(
-                      onTap: (){
-                        if(_formkey.currentState!.validate()){
+                      onTap: () {
+                        if (_formkey.currentState!.validate()) {
                           setState(() {
-                            email=mailcontroller.text;
-                            name= namecontroller.text;
-                            password=passwordcontroller.text;
+                            email = mailcontroller.text;
+                            name = namecontroller.text;
+                            password = passwordcontroller.text;
                           });
                         }
                         registration();
